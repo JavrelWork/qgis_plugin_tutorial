@@ -1,0 +1,4 @@
+black==19.10b0
+flake8==3.8.2
+flake8-import-order==0.18.1
+pb-tool==3.1.0

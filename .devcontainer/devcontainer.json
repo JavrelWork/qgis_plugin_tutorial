@@ -1,0 +1,14 @@
+// For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.122.1/containers/docker-existing-dockerfile
+{
+	"name": "PluginDevelopment",
+	"context": "..",
+	"dockerFile": "Dockerfile",
+	"extensions": [
+		"ms-python.python"
+	],
+	"postCreateCommand": "python3 -m pip install -r .devcontainer/requirements.txt",
+	"containerEnv": {
+		"PYTHONPATH": "$PYTHONPATH:/QGIS/python:/QGIS/python/plugins"
+	}
+}
